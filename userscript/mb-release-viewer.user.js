@@ -2,11 +2,13 @@
 // @name         MusicBrainz → MB Release Viewer button
 // @namespace    https://hildgyorgy.github.io/
 // @version      1.0.0
-// @description  Adds a ListenBrainz-looking button on MusicBrainz release pages that opens MB Release Viewer with current MBID.
+// @description  Adds "MB Release Viewer" button on MusicBrainz release pages that opens MB Release Viewer with current MBID.
 // @match        https://musicbrainz.org/release/*
-// @match        https://beta.musicbrainz.org/release/*
 // @grant        none
+// @run-at       document-end
 // @author       hildgyorgy
+// @updateURL    https://raw.githubusercontent.com/hildgyorgy/mb-release-viewer-tools/main/userscript/mb-release-viewer.user.js
+// @downloadURL  https://raw.githubusercontent.com/hildgyorgy/mb-release-viewer-tools/main/userscript/mb-release-viewer.user.js
 // ==/UserScript==
 
 (() => {
