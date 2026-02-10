@@ -1,1 +1,1 @@
-
+javascript:(()=>{const%20m=location.href.match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i);if(!m){alert('No%20MBID%20found%20on%20this%20page.');return;}const%20mbid=m[0];const%20url='https://hildgyorgy.github.io/mb-release-viewer/?mbid='+encodeURIComponent(mbid);window.open(url,'_blank','noopener');})();
