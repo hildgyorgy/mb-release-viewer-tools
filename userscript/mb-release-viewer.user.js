@@ -6,7 +6,9 @@
 // @match        https://musicbrainz.org/release/*
 // @grant        none
 // @run-at       document-end
-// @author       hildgyorgy
+// @author       György Hild
+// @match        https://musicbrainz.org/release/*
+// @icon         https://musicbrainz.org/favicon.ico
 // @updateURL    https://raw.githubusercontent.com/hildgyorgy/mb-release-viewer-tools/main/userscript/mb-release-viewer.user.js
 // @downloadURL  https://raw.githubusercontent.com/hildgyorgy/mb-release-viewer-tools/main/userscript/mb-release-viewer.user.js
 // ==/UserScript==
