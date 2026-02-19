@@ -34,7 +34,6 @@
     if (document.getElementById("mb-rv-style")) return;
 
     const css = `
-      /* csak minimális: a MB gombjának stílusát klónozzuk, ezért itt alig kell bármi */
       #${BTN_ID} { cursor: pointer; }
       #${BTN_ID}:hover { filter: brightness(1.03); }
       #${BTN_ID}:active { transform: translateY(1px); }
@@ -59,7 +58,7 @@
 
     clone.id = BTN_ID;
 
-    clone.textContent = "MB Release Viewer";
+    clone.textContent = "MusicBrainz Release Viewer";
 
     clone.removeAttribute("href");
     clone.setAttribute("role", "button");
