@@ -57,7 +57,7 @@
 
     clone.id = BTN_ID;
 
-    clone.textContent = "MB Release Viewer";
+    clone.textContent = "MusicBrainz Release Viewer";
 
     clone.removeAttribute("href");
     clone.setAttribute("role", "button");
