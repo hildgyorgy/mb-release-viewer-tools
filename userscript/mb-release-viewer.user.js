@@ -7,7 +7,6 @@
 // @grant        none
 // @run-at       document-end
 // @author       György Hild
-// @match        https://musicbrainz.org/release/*
 // @icon         https://musicbrainz.org/favicon.ico
 // @updateURL    https://raw.githubusercontent.com/hildgyorgy/mb-release-viewer-tools/main/userscript/mb-release-viewer.user.js
 // @downloadURL  https://raw.githubusercontent.com/hildgyorgy/mb-release-viewer-tools/main/userscript/mb-release-viewer.user.js
@@ -34,7 +33,6 @@
     if (document.getElementById("mb-rv-style")) return;
 
     const css = `
-      /* csak minimális: a MB gombjának stílusát klónozzuk, ezért itt alig kell bármi */
       #${BTN_ID} { cursor: pointer; }
       #${BTN_ID}:hover { filter: brightness(1.03); }
       #${BTN_ID}:active { transform: translateY(1px); }
