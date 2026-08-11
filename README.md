@@ -1,13 +1,13 @@
-# MB Release Viewer – Tools
+# MusicBrainz Explorer – Tools
 
-Small browser integration tools for the **MB Release Viewer**.
+Small browser integration tools for **MusicBrainz Explorer**.
 
 This repository contains lightweight helper tools that make it easier to open
-the external MB Release Viewer directly from MusicBrainz release pages.
+MusicBrainz Explorer directly from MusicBrainz release pages.
 
 The tools do **not** replace or modify MusicBrainz functionality.
 They provide a convenient bridge between the MusicBrainz website and
-an external, read-only release viewer.
+the external Explorer.
 
 ---
 
@@ -18,7 +18,7 @@ an external, read-only release viewer.
 A simple bookmarklet that:
 
 - extracts the release MBID from the current MusicBrainz release page
-- opens the MB Release Viewer with the correct release preloaded
+- opens MusicBrainz Explorer with the correct release preloaded
 
 Works in all major desktop browsers (Safari, Chrome, Firefox).
 
@@ -30,7 +30,7 @@ Works in all major desktop browsers (Safari, Chrome, Firefox).
 
 A userscript (Userscripts / Tampermonkey / Greasemonkey) that:
 
-- injects an **MB Release Viewer** button into MusicBrainz release pages
+- injects a **MusicBrainz Explorer** button into MusicBrainz release pages
 - places the button next to existing sidebar controls
 - opens the external viewer with one click
 
@@ -41,15 +41,16 @@ while remaining clearly distinguishable as an external tool.
 
 ---
 
-## MB Release Viewer
+## MusicBrainz Explorer
 
-The tools in this repository are companions to the MB Release Viewer itself,
+The tools in this repository are companions to MusicBrainz Explorer,
 which lives in a separate repository:
 
-- Viewer (live):  
-  https://hildgyorgy.github.io/mb-release-viewer/
-- Viewer (source):  
-  https://github.com/hildgyorgy/mb-release-viewer
+- Explorer (live): https://hildgyorgy.github.io/mb-explorer/
+- Explorer (source): https://github.com/hildgyorgy/mb-explorer
+
+The userscript updates existing version 1.0.0 installations automatically.
+The bookmarklet cannot update itself and must be copied again manually.
 
 ---
 

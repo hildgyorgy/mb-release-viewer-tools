@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         MusicBrainz → MB Release Viewer button
+// @name         MusicBrainz → MusicBrainz Explorer button
 // @namespace    https://hildgyorgy.github.io/
-// @version      1.0.0
-// @description  Adds "MB Release Viewer" button on MusicBrainz release pages that opens MB Release Viewer with current MBID.
+// @version      1.1.0
+// @description  Adds a MusicBrainz Explorer button to release pages and opens the current release in the Explorer.
 // @match        https://musicbrainz.org/release/*
 // @grant        none
 // @run-at       document-end
@@ -15,7 +15,7 @@
 (() => {
   "use strict";
 
-  const VIEWER_BASE = "https://hildgyorgy.github.io/mb-release-viewer/?mbid=";
+  const EXPLORER_BASE = "https://hildgyorgy.github.io/mb-explorer/?mbid=";
   const BTN_ID = "mb-release-viewer-btn";
 
   function extractMBIDFromUrl(url) {
@@ -23,9 +23,9 @@
     return m ? m[0] : null;
   }
 
-  function openViewer(mbid) {
+  function openExplorer(mbid) {
     if (!mbid) return;
-    const url = VIEWER_BASE + encodeURIComponent(mbid);
+    const url = EXPLORER_BASE + encodeURIComponent(mbid);
     window.open(url, "_blank", "noopener,noreferrer");
   }
 
@@ -57,7 +57,7 @@
 
     clone.id = BTN_ID;
 
-    clone.textContent = "MusicBrainz Release Viewer";
+    clone.textContent = "MusicBrainz Explorer";
 
     clone.removeAttribute("href");
     clone.setAttribute("role", "button");
@@ -72,7 +72,7 @@
     const onActivate = (e) => {
       e.preventDefault();
       e.stopPropagation();
-      openViewer(mbid);
+      openExplorer(mbid);
     };
 
     clone.addEventListener("click", onActivate);

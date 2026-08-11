@@ -1,6 +1,6 @@
-# MB Release Viewer – Bookmarklet
+# MusicBrainz Explorer – Bookmarklet
 
-A simple bookmarklet that opens the **MB Release Viewer** for the currently viewed
+A simple bookmarklet that opens **MusicBrainz Explorer** for the currently viewed
 MusicBrainz release page.
 
 ## What it does
@@ -8,7 +8,7 @@ MusicBrainz release page.
 When clicked on a MusicBrainz release page, the bookmarklet:
 
 - extracts the release MBID from the current page URL
-- opens the MB Release Viewer
+- opens MusicBrainz Explorer
 - automatically loads the corresponding release
 
 ## How to install
@@ -19,14 +19,14 @@ When clicked on a MusicBrainz release page, the bookmarklet:
 3. Create a new browser bookmark
 4. Paste the copied code into the **URL / Location** field of the bookmark
 5. Give it a name, for example:  
-   **MB Release Viewer**
+   **MusicBrainz Explorer**
 
 ## How to use
 
 - Navigate to any MusicBrainz release page  
   (e.g. `https://musicbrainz.org/release/...`)
 - Click the bookmark
-- The MB Release Viewer opens in a new tab with the release preloaded
+- MusicBrainz Explorer opens in a new tab with the release preloaded
 
 ## Compatibility
 
