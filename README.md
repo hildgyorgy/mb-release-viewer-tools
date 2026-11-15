@@ -28,6 +28,8 @@ Works in all major desktop browsers (Safari, Chrome, Firefox).
 
 ### 🧩 Userscript
 
+➡️ **[Install the userscript](https://raw.githubusercontent.com/hildgyorgy/mb-release-viewer-tools/main/userscript/mb-release-viewer.user.js)**
+
 A userscript (Userscripts / Tampermonkey / Greasemonkey) that:
 
 - injects a **MusicBrainz Explorer** button into MusicBrainz release pages
